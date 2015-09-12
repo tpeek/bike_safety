@@ -7,13 +7,12 @@
         {% bootstrap_javascript %}
         {% bootstrap_messages %}
 
-        <title>Imager</title>
+        <title>Be Safe!</title>
     {% block head %}
     {% endblock %}
 </head>
 
-<h1><strong>Imager </strong><small>Share Moments, Share Life<br>
-</small></h1>
+<h1><strong>Be Safe!</strong></h1>
 <nav>
     Welcome, {% if user.is_authenticated %}{{ user }}{% else %}Guest{% endif %}!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <a href="{% url 'homepage' %}">home</a>
@@ -28,5 +27,4 @@
 </nav><br><br>
 {% block content %}
 {% endblock %}
-<footer style="clear:both;" class="text-center">&copy; 2015 JTNTJ, inc.</footer>
 </html>
