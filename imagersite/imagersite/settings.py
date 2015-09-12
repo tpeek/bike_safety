@@ -153,6 +153,10 @@ CACHES = {
     }
 }
 
+LEAFLET_CONFIG = {
+    'DEFAULT_CENTER': (47.6097, -122.3331),
+    'DEFAULT_ZOOM': 9,
+}
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/

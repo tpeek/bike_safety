@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from imager_images.models import Photo
+from django.contrib.gis.geoip import GeoIP
 
 
 def home_view(request):
