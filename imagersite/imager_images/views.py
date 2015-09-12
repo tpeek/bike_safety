@@ -94,7 +94,7 @@ def add_photo_view(request):
             new_photo.owner = request.user
             new_photo.save()
 
-            return HttpResponseRedirect('/images/library')
+            return HttpResponseRedirect('/')
         else:
             return render(request, 'add_photo.html', {'form1': picform1.as_p,
                 'form2': picform2})

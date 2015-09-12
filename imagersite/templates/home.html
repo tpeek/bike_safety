@@ -37,7 +37,8 @@ for (var i = 0; i < myElements.length; i++) {
             // Download GeoJSON via Ajax
             $.getJSON(dataurl, function (data) {
             // Add GeoJSON layer
-            L.geoJson(data).addTo(map);
+            L.geoJson(data).addTo(map).bindPopup('{{photo.title}}: {{photo.description}}')
+    .openPopup();
             });
             {% endfor %}
 

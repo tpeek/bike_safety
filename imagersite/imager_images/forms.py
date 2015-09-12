@@ -12,7 +12,7 @@ class AlbumForm(ModelForm):
 class PhotoForm(ModelForm):
     class Meta:
         model = Photo
-        fields = ['title', 'description', 'privacy', 'file']
+        fields = ['title', 'description', 'file']
 
 
 class LocationForm(geoforms.Form):
